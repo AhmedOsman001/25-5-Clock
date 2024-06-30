@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Clock</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f7f7f7;
+        }
+
+        p {
+            font-size: 1.2em;
+            margin: 0;
+            color: #333;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            margin: 5px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        #break-length, #session-length, #time-left {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #333;
+        }
+
+        #timer-label {
+            font-size: 1.2em;
+            margin-top: 10px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+<p id="break-label">Break Length</p>
+<p id="session-label">Session Length</p>
+
+<button id="break-decrement">Break Decrement</button>
+<button id="session-decrement">Session Decrement</button>
+
+<button id="break-increment">Break Increment</button>
+<button id="session-increment">Session Increment</button>
+
+<p id="break-length">5</p>
+<p id="session-length">25</p>
+
+<p id="timer-label">Session</p>
+<p id="time-left">25:00</p>
+
+<button id="start_stop">Start/Stop</button>
+<button id="reset">Reset</button>
+
+</body>
+</html>
